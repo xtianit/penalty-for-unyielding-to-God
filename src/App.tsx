@@ -53,179 +53,229 @@ type ScriptureDB = Record<string, BibleVersions>;
 
 
 const initialScriptureDB: ScriptureDB = {
-
-  "2 Corinthians 2:11": {
-    "KJV": "11 Lest Satan should get an advantage of us: for we are not ignorant of his devices.",
-    "NKJV": "11 lest Satan should take advantage of us; for we are not ignorant of his devices.",
-    "NIV": "11 in order that Satan might not outwit us. For we are not unaware of his schemes.",
-    "ESV": "11 so that we would not be outwitted by Satan; for we are not ignorant of his designs.",
-    "AMP": "11 to keep Satan from taking advantage of us; for we are not ignorant of his schemes.",
-    "NLT": "11 so that Satan will not outsmart us. For we are familiar with his evil schemes.",
-    "MSG": "11 After all, we don't want to unwittingly give Satan an opening for yet more mischief—we're not oblivious to his sly ways!"
-    },
-
-    "Proverbs 18:10": {
-    "KJV": "10 The name of the Lord is a strong tower: the righteous runneth into it, and is safe.",
-    "NKJV": "10 The name of the Lord is a strong tower; The righteous run to it and are safe.",
-    "NIV": "10 The name of the Lord is a fortified tower; the righteous run to it and are safe.",
-    "ESV": "10 The name of the Lord is a strong tower; the righteous man runs into it and is safe.",
-    "AMP": "10 The name of the Lord is a strong tower; The righteous runs to it and is safe and set on high [far above evil].",
-    "NLT": "10 The name of the Lord is a strong fortress; the godly run to him and are safe.",
-    "MSG": "10 God's name is a place of protection—good people can run there and be safe."
-    },
-
-  "Daniel 11:32": {
-    "KJV": "32 And such as do wickedly against the covenant shall he corrupt by flatteries: but the people that do know their God shall be strong, and do exploits.",
-    "NKJV": "32 Those who do wickedly against the covenant he shall corrupt with flattery; but the people who know their God shall be strong, and carry out great exploits.",
-    "NIV": "32 With flattery he will corrupt those who have violated the covenant, but the people who know their God will firmly resist him.",
-    "ESV": "32 He shall seduce with flattery those who violate the covenant, but the people who know their God shall stand firm and take action.",
-    "AMP": "32 By smooth words he will turn to godlessness those who act wickedly against the covenant, but the people who know their God will be strong and take action.",
-    "NLT": "32 He will flatter and win over those who have violated the covenant. But the people who know their God will be strong and will resist him.",
-    "MSG": "32 Those who betray the covenant will be corrupted by flattery, but people who know their God will be strong and take action."
+  "Matthew 22:37": {
+    "KJV": "37 Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind.",
+    "NKJV": "37 Jesus said to him, ‘You shall love the Lord your God with all your heart, with all your soul, and with all your mind.’",
+    "NIV": "37 Jesus replied: “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’",
+    "ESV": "37 And he said to him, “You shall love the Lord your God with all your heart and with all your soul and with all your mind.",
+    "AMP": "37 And Jesus replied to him, “‘You shall love the Lord your God with all your heart, and with all your soul, and with all your mind.’",
+    "NLT": "37 Jesus replied, “‘You must love the Lord your God with all your heart, all your soul, and all your mind.’",
+    "MSG": "37 Jesus said, “‘Love the Lord your God with all your passion and prayer and intelligence.’"
   },
-  "1 Kings 21:1-13": {
-        KJV: "1 And it came to pass after these things, that Naboth the Jezreelite had a vineyard, which was in Jezreel, hard by the palace of Ahab king of Samaria. 2 And Ahab spake unto Naboth, saying, Give me thy vineyard, that I may have it for a garden of herbs, because it is near unto my house: and I will give thee for it a better vineyard than it; or, if it seem good to thee, I will give thee the worth of it in money. 3 And Naboth said to Ahab, The Lord forbid it me, that I should give the inheritance of my fathers unto thee. 4 And Ahab came into his house heavy and displeased because of the word which Naboth the Jezreelite had spoken to him: for he had said, I will not give thee the inheritance of my fathers. And he laid him down upon his bed, and turned away his face, and would eat no bread. 5 But Jezebel his wife came to him, and said unto him, Why is thy spirit so sad, that thou eatest no bread? 6 And he said unto her, Because I spake unto Naboth the Jezreelite, and said unto him, Give me thy vineyard for money; or else, if it provide thee better, I will give thee another vineyard for it: and he answered, I will not give thee my vineyard. 7 And Jezebel his wife said unto him, Dost thou now govern the kingdom of Israel? arise, and eat bread, and let thine heart be merry: I will give thee the vineyard of Naboth the Jezreelite. 8 So she wrote letters in Ahab's name, and sealed them with his seal, and sent the letters unto the elders and to the nobles that were in his city, dwelling with Naboth. 9 And she wrote in the letters, saying, Proclaim a fast, and set Naboth on high among the people: 10 And set two men, sons of Belial, before him, to bear witness against him, saying, Thou didst blaspheme God and the king. And then carry him out, and stone him, that he may die. 11 And the men of his city, even the elders and the nobles who were the inhabitants in his city, did as Jezebel had sent unto them, and as it was written in the letters which she had sent unto them. 12 They proclaimed a fast, and set Naboth on high among the people. 13 And there came in two men, children of Belial, and sat before him: and the wicked men witnessed against him, even against Naboth, in the presence of the people, saying, Naboth did blaspheme God and the king. Then they carried him forth out of the city, and stoned him with stones, that he died.",
-        NKJV: "1 And it came to pass after these things that Naboth the Jezreelite had a vineyard which was in Jezreel, next to the palace of Ahab king of Samaria. 2 So Ahab spoke to Naboth, saying, “Give me your vineyard, that I may have it for a vegetable garden, because it is near, next to my house; and for it I will give you a vineyard better than it. Or, if it seems good to you, I will give you its worth in money.” 3 But Naboth said to Ahab, “The Lord forbid that I should give the inheritance of my fathers to you!” 4 So Ahab went into his house sullen and displeased because of the word which Naboth the Jezreelite had spoken to him; for he had said, “I will not give you the inheritance of my fathers.” And he lay down on his bed, and turned away his face, and would eat no food. 5 But Jezebel his wife came to him, and said to him, “Why is your spirit so sullen that you eat no food?” 6 He said to her, “Because I spoke to Naboth the Jezreelite, and said to him, ‘Give me your vineyard for money; or else, if it pleases you, I will give you another vineyard for it.’ And he answered, ‘I will not give you my vineyard.’” 7 Then Jezebel his wife said to him, “You now exercise authority over Israel! Arise, eat food, and let your heart be cheerful; I will give you the vineyard of Naboth the Jezreelite.” 8 And she wrote letters in Ahab’s name, sealed them with his seal, and sent the letters to the elders and the nobles who were in his city, dwelling with Naboth. 9 She wrote in the letters, saying, Proclaim a fast, and seat Naboth with high honor among the people; 10 and seat two men, scoundrels, before him to bear witness against him, saying, “You have blasphemed God and the king.” Then take him out, and stone him, that he may die. 11 So the men of his city, the elders and the nobles who were inhabitants in his city, did as Jezebel had sent to them, as it was written in the letters which she had sent to them. 12 They proclaimed a fast, and seated Naboth with high honor among the people. 13 And two men, scoundrels, came in and sat before him; and the scoundrels witnessed against him, against Naboth, in the presence of the people, saying, “Naboth has blasphemed God and the king!” Then they carried him out of the city and stoned him with stones, so that he died.",
-        NIV: "1 Some time later there was an incident involving a vineyard belonging to Naboth the Jezreelite. The vineyard was in Jezreel, close to the palace of Ahab king of Samaria. 2 Ahab said to Naboth, “Let me have your vineyard to use for a vegetable garden, since it is close to my palace. In exchange I will give you a better vineyard or, if you prefer, I will pay you whatever it is worth.” 3 But Naboth replied, “The Lord forbid that I should give you the inheritance of my ancestors.” 4 So Ahab went home, sullen and angry because Naboth the Jezreelite had said, “I will not give you the inheritance of my ancestors.” He lay on his bed sulking and refused to eat. 5 His wife Jezebel came in and asked him, “Why are you so sullen? Why won’t you eat?” 6 He answered her, “Because I said to Naboth the Jezreelite, ‘Sell me your vineyard; or if you prefer, I will give you another vineyard in exchange.’ But he said, ‘I will not give you my vineyard.’” 7 Jezebel his wife said, “Is this how you act as king over Israel? Get up and eat! Cheer up. I’ll get you the vineyard of Naboth the Jezreelite.” 8 So she wrote letters in Ahab’s name, placed his seal on them, and sent them to the elders and nobles who lived in Naboth’s city with him. 9 In those letters she wrote: “Proclaim a day of fasting and seat Naboth in a prominent place among the people. 10 But seat two scoundrels opposite him and have them bring charges that he has cursed both God and the king. Then take him out and stone him to death.” 11 So the elders and nobles who lived in Naboth’s city did as Jezebel directed in the letters she had written to them. 12 They proclaimed a fast and seated Naboth in a prominent place among the people. 13 Then two scoundrels came and sat opposite him and brought charges against Naboth before the people, saying, “Naboth has cursed both God and the king.” So they took him outside the city and stoned him to death.",
-        ESV: "1 Now Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria. 2 And after this Ahab said to Naboth, “Give me your vineyard, that I may have it for a vegetable garden, because it is near my house, and I will give you a better vineyard for it; or, if it seems good to you, I will give you its value in money.” 3 But Naboth said to Ahab, “The Lord forbid it me, that I should give you the inheritance of my fathers.” 4 And Ahab came into his house vexed and sullen because of what Naboth the Jezreelite had said to him, for he had said, “I will not give you the inheritance of my fathers.” And he lay down on his bed and turned away his face and would eat no food. 5 But Jezebel his wife came to him and said to him, “Why is your spirit so vexed that you eat no food?” 6 And he said to her, “Because I spoke to Naboth the Jezreelite and said to him, ‘Give me your vineyard for money, or else, if it please you, I will give you another vineyard for it.’ And he answered, ‘I will not give you my vineyard.’” 7 And Jezebel his wife said to him, “Do you now govern Israel? Arise and eat bread and let your heart be cheerful; I will give you the vineyard of Naboth the Jezreelite.” 8 So she wrote letters in Ahab's name and sealed them with his seal, and she sent the letters to the elders and the nobles who lived in his city with Naboth. 9 And she wrote in the letters, “Proclaim a fast, and set Naboth at the head of the people. 10 And set two worthless men opposite him, and let them bring a charge against him, saying, ‘You have cursed God and the king.’ Then take him out and stone him to death.” 11 And the men of his city, the elders and the nobles who lived in his city, did as Jezebel had sent word to them. As it was written in the letters that she had sent to them, 12 they proclaimed a fast and set Naboth at the head of the people. 13 And the two worthless men came in and sat opposite him. And the worthless men brought a charge against Naboth in the presence of the people, saying, “Naboth cursed God and the king.” So they took him outside the city and stoned him to death with stones.",
-        AMP: "1 Now it came to pass after these things that Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria. 2 Ahab spoke to Naboth, saying, “Give me your vineyard so that I may have it for a garden of herbs (vegetables), because it is near my house. I will give you a better vineyard for it, or, if you prefer, I will give you its worth in money.” 3 But Naboth said to Ahab, “The Lord forbid that I should give the inheritance of my fathers to you!” 4 So Ahab went into his house sullen and vexed because of the answer which Naboth the Jezreelite had given him; for he had said, “I will not give you the inheritance of my fathers.” And he lay down on his bed and turned away his face and would eat no food. 5 But Jezebel his wife came to him and asked, “Why is your spirit so troubled that you eat no food?” 6 And he said to her, “Because I spoke to Naboth the Jezreelite and said to him, ‘Give me your vineyard for money; or else, if you prefer, I will give you another vineyard for it.’ And he answered, ‘I will not give you my vineyard.’” 7 Jezebel his wife said to him, “Do you now exercise authority over Israel? Arise, eat bread, and let your heart be cheerful; I will give you the vineyard of Naboth the Jezreelite.” 8 So she wrote letters in Ahab’s name and sealed them with his seal, and sent them to the elders and to the nobles who lived in his city with Naboth. 9 Now she wrote in the letters, saying, “Proclaim a fast and seat Naboth at the head of the people; 10 and seat two worthless and unprincipled men opposite him, and have them testify against him, saying, ‘You cursed God and the king.’ Then take him out and stone him to death.” 11 So the men of his city, the elders and the nobles who lived in his city, did as Jezebel had sent word to them, just as it was written in the letters which she had sent to them. 12 They proclaimed a fast and seated Naboth at the head of the people. 13 Then the two worthless men came in and sat opposite him; and the worthless men testified against Naboth before the people, saying, “Naboth cursed God and the king.” So they took him outside the city and stoned him to death.",
-        NLT: "1 Now there was a man named Naboth, from Jezreel, who owned a vineyard in Jezreel beside the palace of King Ahab of Samaria. 2 One day Ahab said to Naboth, “Since your vineyard is so convenient to my palace, I would like to buy it to use as a vegetable garden. I will give you a better vineyard in exchange, or if you prefer, I will pay you for it.” 3 But Naboth replied, “The Lord forbid that I should give you the inheritance that was passed down by my ancestors.” 4 So Ahab went home angry and sullen because of Naboth’s answer. The king went to bed with his face to the wall and refused to eat! 5 “What’s the matter?” his wife Jezebel asked him. “What’s made you so upset that you’re not eating?” 6 “I asked Naboth to sell me his vineyard or trade it, but he refused!” Ahab told her. 7 “Are you the king of Israel or not?” Jezebel asked. “Get up and eat something, and don’t worry about it. I’ll get you Naboth’s vineyard!” 8 So she wrote letters in Ahab’s name, sealed them with his seal, and sent them to the elders and other leaders of the town where Naboth lived. 9 In her letters she commanded: “Call the citizens together for a fast and give Naboth a place of honor. 10 And then seat two scoundrels across from him who will accuse him of cursing God and the king. Then take him out and stone him to death.” 11 So the elders and other town leaders followed the instructions Jezebel had written in the letters. 12 They called for a fast and put Naboth at a place of honor among the people. 13 Then the two scoundrels came and sat down across from him. And they accused Naboth before all the people, saying, “Naboth cursed God and the king.” So he was dragged outside the town and stoned to death.",
-        MSG: "1-3 It came about after this that Naboth the Jezreelite owned a vineyard in Jezreel. It was right next to the palace of Ahab king of Samaria. Ahab said to Naboth, “Give me your vineyard so I can use it for a kitchen garden; it’s right next to my house. I’ll give you a better vineyard in exchange, or if you prefer, I’ll pay you a fair price in cash.” Naboth said to Ahab, “God forbid that I should give you my family inheritance!” 4 Ahab went home in a black mood, sulking because of Naboth’s answer, “I’ll never give you my family inheritance.” He went to bed, turned his face to the wall, and wouldn't eat a bite. 5-6 His wife Jezebel came in and said, “What’s going on? Why are you so out of sorts? Why aren't you eating?” He told her, “Because I spoke to Naboth the Jezreelite and said, ‘Give me your vineyard. I’ll pay you for it or, if you’d rather, I’ll give you another vineyard in exchange.’ And he said, ‘I’ll never give you my vineyard.’” 7 Jezebel his wife said, “Is this how the king of Israel acts? Get out of bed! Eat! Cheer up! I’ll get you the vineyard of Naboth the Jezreelite.” 8-10 So she wrote letters in Ahab’s name and sealed them with his seal. She sent the letters to the city fathers and leaders who lived in Naboth’s city. She wrote: “Call for a fast. Put Naboth in the front row. Then find two hoodlums and seat them opposite him. Have them accuse him, ‘You cursed God and the King!’ Then take him out and stone him to death.” 11-13 The city fathers and leaders did what Jezebel ordered in the letters she had sent them. They called for a fast and put Naboth in the front row. Then the two hoodlums came in, sat in the witness box, and accused Naboth before the people: “Naboth cursed God and the King!” They took him outside the city and stoned him to death."
-    },
-  "1 Kings 21:1-2": {
-    KJV: "1 And it came to pass after these things, that Naboth the Jezreelite had a vineyard, which was in Jezreel, hard by the palace of Ahab king of Samaria. 2 And Ahab spake unto Naboth, saying, Give me thy vineyard, that I may have it for a garden of herbs, because it is near unto my house: and I will give thee for it a better vineyard than it; or, if it seem good to thee, I will give thee the worth of it in money.",
-    NKJV: "1 And it came to pass after these things that Naboth the Jezreelite had a vineyard which was in Jezreel, next to the palace of Ahab king of Samaria. 2 So Ahab spoke to Naboth, saying, “Give me your vineyard, that I may have it for a vegetable garden, because it is near, next to my house; and for it I will give you a vineyard better than it. Or, if it seems good to you, I will give you its worth in money.”",
-    NIV: "1 Some time later there was an incident involving a vineyard belonging to Naboth the Jezreelite. The vineyard was in Jezreel, close to the palace of Ahab king of Samaria. 2 Ahab said to Naboth, “Let me have your vineyard to use for a vegetable garden, since it is close to my palace. In exchange I will give you a better vineyard or, if you prefer, I will pay you whatever it is worth.”",
-    ESV: "1 Now Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria. 2 And after this Ahab said to Naboth, “Give me your vineyard, that I may have it for a vegetable garden, because it is near my house, and I will give you a better vineyard for it; or, if it seems good to you, I will give you its value in money.”",
-    AMP: "1 Now it came to pass after these things that Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria. 2 Ahab spoke to Naboth, saying, “Give me your vineyard so that I may have it for a garden of herbs (vegetables), because it is near my house. I will give you a better vineyard for it, or, if you prefer, I will give you its worth in money.”",
-    NLT: "1 Now there was a man named Naboth, from Jezreel, who owned a vineyard in Jezreel beside the palace of King Ahab of Samaria. 2 One day Ahab said to Naboth, “Since your vineyard is so convenient to my palace, I would like to buy it to use as a vegetable garden. I will give you a better vineyard in exchange, or if you prefer, I will pay you for it.”",
-    MSG: "1-2 It came about after this that Naboth the Jezreelite owned a vineyard in Jezreel. It was right next to the palace of Ahab king of Samaria. Ahab said to Naboth, “Give me your vineyard so I can use it for a kitchen garden; it’s right next to my house. I’ll give you a better vineyard in exchange, or if you prefer, I’ll pay you a fair price in cash.”"
+
+  "Matthew 11:20-24": {
+    "KJV": "20 Then began he to upbraid the cities wherein most of his mighty works were done, because they repented not: 21 Woe unto thee, Chorazin! woe unto thee, Bethsaida! for if the mighty works, which were done in you, had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes. 22 But I say unto you, It shall be more tolerable for Tyre and Sidon at the day of judgment, than for you. 23 And thou, Capernaum, which art exalted unto heaven, shalt be brought down to hell: for if the mighty works, which have been done in thee, had been done in Sodom, it would have remained until this day. 24 But I say unto you, That it shall be more tolerable for the land of Sodom in the day of judgment, than for thee.",
+    "NKJV": "20 Then He began to rebuke the cities in which most of His mighty works had been done, because they did not repent: 21 “Woe to you, Chorazin! Woe to you, Bethsaida! For if the mighty works which were done in you had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes. 22 But I say to you, it will be more tolerable for Tyre and Sidon in the day of judgment than for you. 23 And you, Capernaum, who are exalted to heaven, will be brought down to Hades; for if the mighty works which were done in you had been done in Sodom, it would have remained until this day. 24 But I say to you that it shall be more tolerable for the land of Sodom in the day of judgment than for you.”",
+    "NIV": "20 Then Jesus began to denounce the towns in which most of his miracles had been performed, because they did not repent. 21 “Woe to you, Chorazin! Woe to you, Bethsaida! For if the miracles that were performed in you had been performed in Tyre and Sidon, they would have repented long ago in sackcloth and ashes. 22 But I tell you, it will be more bearable for Tyre and Sidon on the day of judgment than for you. 23 And you, Capernaum, will you be lifted to the heavens? No, you will go down to the depths. If the miracles that were performed in you had been performed in Sodom, it would have remained to this day. 24 But I tell you that it will be more bearable for Sodom on the day of judgment than for you.”",
+    "ESV": "20 Then he began to denounce the cities where most of his mighty works had been done, because they did not repent. 21 “Woe to you, Chorazin! Woe to you, Bethsaida! For if the mighty works done in you had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes. 22 But I tell you, it will be more bearable on the day of judgment for Tyre and Sidon than for you. 23 And you, Capernaum, will you be exalted to heaven? You will be brought down to Hades. For if the mighty works done in you had been done in Sodom, it would have remained until this day. 24 But I tell you that it will be more tolerable on the day of judgment for the land of Sodom than for you.”",
+    "AMP": "20 Then He began to denounce the cities in which most of His miracles had been done, because they did not repent. 21 “Woe to you, Chorazin! Woe to you, Bethsaida! For if the miracles done in you had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes. 22 Nevertheless I say to you, it will be more tolerable for Tyre and Sidon on the day of judgment than for you. 23 And you, Capernaum, will you be exalted to heaven? You will descend to Hades; for if the miracles done in you had been done in Sodom, it would have remained until this day. 24 But I say to you that it will be more tolerable for the land of Sodom on the day of judgment, than for you.”",
+    "NLT": "20 Then Jesus began to denounce the towns where he had done so many of his miracles, because they hadn’t repented of their sins and turned to God. 21 “What sorrow awaits you, Chorazin and Bethsaida! For if the miracles I did in you had been done in wicked Tyre and Sidon, their people would have repented of their sins long ago, clothing themselves in burlap and throwing ashes on their heads to show their remorse. 22 I tell you, Tyre and Sidon will be better off on judgment day than you. 23 “And you people of Capernaum, will you be honored in heaven? No, you will go down to the place of the dead. For if the miracles I did in you had been done in wicked Sodom, it would still be here today. 24 I tell you, even Sodom will be better off on judgment day than you.”",
+    "MSG": "20-22 Next Jesus began to denouncing the towns where most of his miracles had been done, because they hadn’t turned to God. “Doom to you, Chorazin! Doom to you, Bethsaida! If Tyre and Sidon had seen half of the miracles you’re seeing, they’d have been on their knees in a minute. At Judgment Day they’ll get off easy compared to you. 23-24 And Capernaum! With your head in the clouds, do you think you’ll sit on the highest council of heaven? You’re going to end up in the abyss. If Sodom had just seen what you’ve seen, she’d still be on the map. At Judgment Day they’ll get off easy compared to you.”"
   },
-  "1 Kings 21:1": {
-    KJV: "1 And it came to pass after these things, that Naboth the Jezreelite had a vineyard, which was in Jezreel, hard by the palace of Ahab king of Samaria.",
-    NKJV: "1 And it came to pass after these things that Naboth the Jezreelite had a vineyard which was in Jezreel, next to the palace of Ahab king of Samaria.",
-    NIV: "1 Some time later there was an incident involving a vineyard belonging to Naboth the Jezreelite. The vineyard was in Jezreel, close to the palace of Ahab king of Samaria.",
-    ESV: "1 Now Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria.",
-    AMP: "1 Now it came to pass after these things that Naboth the Jezreelite had a vineyard in Jezreel, beside the palace of Ahab king of Samaria.",
-    NLT: "1 Now there was a man named Naboth, from Jezreel, who owned a vineyard in Jezreel beside the palace of King Ahab of Samaria.",
-    MSG: "1 It came about after this that Naboth the Jezreelite owned a vineyard in Jezreel. It was right next to the palace of Ahab king of Samaria."
+
+  "Mark 6:45": {
+    "KJV": "45 And straightway he constrained his disciples to get into the ship, and to go to the other side before unto Bethsaida, while he sent away the people.",
+    "NKJV": "45 Immediately He made His disciples get into the boat and go before Him to the other side, to Bethsaida, while He sent the multitude away.",
+    "NIV": "45 Immediately Jesus made his disciples get into the boat and go on ahead of him to Bethsaida, while he dismissed the crowd.",
+    "ESV": "45 Immediately he made his disciples get into the boat and go before him to the other side, to Bethsaida, while he dismissed the crowd.",
+    "AMP": "45 Immediately Jesus insisted that His disciples get into the boat and go ahead of Him to the other side to Bethsaida, while He was dismissing the crowd.",
+    "NLT": "45 Immediately after this, Jesus insisted that his disciples get back into the boat and head across the lake to Bethsaida, while he sent the people home.",
+    "MSG": "45 Right of the bat, Jesus made his disciples get into the boat and head for Bethsaida on the other side, while he dismissed the crowd."
   },
-  "John 5:7": {
-    KJV: "7 The impotent man answered him, Sir, I have no man, when the water is troubled, to put me into the pool: but while I am coming, another steppeth down before me.",
-    NKJV: "7 The sick man answered Him, “Sir, I have no man to put me into the pool when the water is stirred up; but while I am coming, another steps down before me.”",
-    NIV: "7 “Sir,” the invalid replied, “I have no one to help me into the pool when the water is stirred. While I am trying to get in, someone else goes down ahead of me.”",
-    ESV: "7 The sick man answered him, “Sir, I have no one to put me into the pool when the water is stirred up, and while I am going another steps down before me.”",
-    AMP: "7 The invalid answered, “Sir, I have no one to put me into the pool when the water is stirred up, and while I am coming [to get into it], someone else steps down before me.”",
-    NLT: "7 “I can't, sir,” the sick man said, “for I have no one to put me into the pool when the water bubbles up. Someone else always gets there ahead of me.”",
-    MSG: "7 The sick man said, “Sir, when the water is stirred, I don't have anybody to help me into the pool. By the time I get there, somebody else is already in.”"
+
+  "Mark 8:22": {
+    "KJV": "22 And he cometh to Bethsaida; and they bring a blind man unto him, and besought him to touch him.",
+    "NKJV": "22 Then He came to Bethsaida; and they brought a blind man to Him, and begged Him to touch him.",
+    "NIV": "22 They came to Bethsaida, and some people brought a blind man and begged Jesus to touch him.",
+    "ESV": "22 And they came to Bethsaida. And some people brought to him a blind man and begged him to touch him.",
+    "AMP": "22 And they came to Bethsaida. And some people brought a blind man to Jesus and begged Him to touch him.",
+    "NLT": "22 When they arrived at Bethsaida, some people brought a blind man to Jesus, and they begged him to touch the man and heal him.",
+    "MSG": "22 They arrived at Bethsaida. Some people brought a blind man and begged him to touch him."
+  },
+
+  "Matthew 4:13-16": {
+    "KJV": "13 And leaving Nazareth, he came and dwelt in Capernaum, which is upon the sea coast, in the borders of Zabulon and Nephthalim: 14 That it might be fulfilled which was spoken by Esaias the prophet, saying, 15 The land of Zabulon, and the land of Nephthalim, by the way of the sea, beyond Jordan, Galilee of the Gentiles; 16 The people which sat in darkness saw great light; and to them which sat in the region and shadow of death light is sprung up.",
+    "NKJV": "13 And leaving Nazareth, He came and dwelt in Capernaum, which is by the sea, in the regions of Zebulun and Naphtali, 14 that it might be fulfilled which was spoken by Isaiah the prophet, saying: 15 “The land of Zebulun and the land of Naphtali, By the way of the sea, beyond the Jordan, Galilee of the Gentiles: 16 The people who sat in darkness have seen a great light, And upon those who sat in the region and shadow of death Light has dawned.”",
+    "NIV": "13 Leaving Nazareth, he went and lived in Capernaum, which was by the lake in the area of Zebulun and Naphtali— 14 to fulfill what was said through the prophet Isaiah: 15 “Land of Zebulun and land of Naphtali, the Way of the Sea, beyond the Jordan, Galilee of the Gentiles— 16 the people living in darkness have seen a great light; on those living in the land of the shadow of death a light has dawned.”",
+    "ESV": "13 And leaving Nazareth he went and lived in Capernaum by the sea, in the territory of Zebulun and Naphtali, 14 so that what was spoken by the prophet Isaiah might be fulfilled: 15 “The land of Zebulun and the land of Naphtali, the way of the sea, beyond the Jordan, Galilee of the Gentiles— 16 the people dwelling in darkness have seen a great light, and for those dwelling in the region and shadow of death, on them a light has dawned.”",
+    "AMP": "13 And leaving Nazareth, He went and settled in Capernaum, which is by the sea, in the country of Zebulun and Naphtali. 14 This was to fulfill what was spoken by the prophet Isaiah: 15 “The land of Zebulun and the land of Naphtali, by the way of the sea, beyond the Jordan, Galilee of the Gentiles (non-Jews)— 16 The people who were sitting (living) in spiritual darkness have seen a great Light, and for those who were sitting (living) in the region and shadow of [spiritual] death, upon them a Light has dawned.”",
+    "NLT": "13 He went first to Nazareth, then left there and moved to Capernaum, beside the Sea of Galilee, in the region of Zebulun and Naphtali. 14 This fulfilled what God said through the prophet Isaiah: 15 “In the land of Zebulun and of Naphtali, beside the sea, beyond the Jordan River, in Galilee where so many Gentiles live, 16 the people who sat in darkness have seen a great light. And for those who lived in the land where death casts its shadow, a light has shined.”",
+    "MSG": "13-16 He left Nazareth and moved to Capernaum, alongside the Sea of Galilee, at the crossroads of Zebulun and Naphtali. This moved realized Isaiah’s prophecy: Land of Zebulun, land of Naphtali, road to the sea, over Jordan, Galilee, crossroads for the nations. People sitting out in the dark saw a huge light; sitting in that black-hole territory of death, they got fresh light, dawned for them."
+  },
+
+  "Mark 2:1": {
+    "KJV": "1 And again he entered into Capernaum after some days; and it was noised that he was in the house.",
+    "NKJV": "1 And again He entered Capernaum after some days, and it was heard that He was in the house.",
+    "NIV": "1 A few days later, when Jesus again entered Capernaum, the people heard that he had come home.",
+    "ESV": "1 And when he returned to Capernaum after some days, it was reported that he was at home.",
+    "AMP": "1 When Jesus returned to Capernaum a few days later, the news went around that He was at home.",
+    "NLT": "1 When Jesus returned to Capernaum several days later, the news spread quickly that he was back home.",
+    "MSG": "1 After a few days, Jesus went back to Capernaum, and word got around that he was back home."
+  },
+
+  "1 Chronicles 1:13": {
+    "KJV": "13 And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim,",
+    "NKJV": "13 Mizraim begat Ludim, Anamim, Lehabim, Naphtuhim,",
+    "NIV": "13 Mizraim was the father of the Ludites, Anamites, Lehabites, Naphtuhites,",
+    "ESV": "13 Mizraim fathered Ludim, Anamim, Lehabim, Naphtuhim,",
+    "AMP": "13 Mizraim was the father of Ludim, Anamim, Lehabim, Naphtuhim,",
+    "NLT": "13 Mizraim was the ancestor of the Ludites, Anamites, Lehabites, Naphtuhites,",
+    "MSG": "13 Mizraim was the ancestor of the Ludim, the Anamim, the Lehabim, the Naphtuhim,"
+  },
+
+  "Genesis 19:24-25": {
+    "KJV": "24 Then the Lord rained upon Sodom and upon Gomorrah brimstone and fire from the Lord out of heaven; 25 And he overthrew those cities, and all the plain, and all the inhabitants of the cities, and that which grew upon the ground.",
+    "NKJV": "24 Then the Lord rained brimstone and fire on Sodom and Gomorrah, from the Lord out of heaven. 25 So He overthrew those cities, all the plain, all the inhabitants of the cities, and what grew on the ground.",
+    "NIV": "24 Then the Lord rained down burning sulfur on Sodom and Gomorrah—from the Lord out of the heavens. 25 Thus he overthrew those cities and the entire plain, destroying all those living in the cities—and also the vegetation in the land.",
+    "ESV": "24 Then the Lord rained on Sodom and Gomorrah sulfur and fire from the Lord out of heaven. 25 And he overthrew those cities, and all the valley, and all the inhabitants of the cities, and what grew on the ground.",
+    "AMP": "24 Then the Lord rained brimstone and fire on Sodom and on Gomorrah from the Lord out of heaven, 25 and He overthrew (demolished) those cities, and the entire valley, and all the inhabitants of the cities, and whatever grew on the ground.",
+    "NLT": "24 Then the Lord rained down fire and burning sulfur from the sky on Sodom and Gomorrah. 25 He utterly destroyed them and the other cities of the plain, wiping out all the people and every bit of vegetation.",
+    "MSG": "24-25 Then God rained brimstone and fire down on Sodom and Gomorrah—a river of lava from God out of the sky!—and overthrew those cities and the entire plain and everyone who lived in the cities, everything that grew from the ground."
+  },
+
+  "Matthew 11:22-24": {
+    "KJV": "22 But I say unto you, It shall be more tolerable for Tyre and Sidon at the day of judgment, than for you. 23 And thou, Capernaum, which art exalted unto heaven, shalt be brought down to hell: for if the mighty works, which have been done in thee, had been done in Sodom, it would have remained until this day. 24 But I say unto you, That it shall be more tolerable for the land of Sodom in the day of judgment, than for thee.",
+    "NKJV": "22 But I say to you, it will be more tolerable for Tyre and Sidon in the day of judgment than for you. 23 And you, Capernaum, who are exalted to heaven, will be brought down to Hades; for if the mighty works which were done in you had been done in Sodom, it would have remained until this day. 24 But I say to you that it shall be more tolerable for the land of Sodom in the day of judgment than for you.”",
+    "NIV": "22 But I tell you, it will be more bearable for Tyre and Sidon on the day of judgment than for you. 23 And you, Capernaum, will you be lifted to the heavens? No, you will go down to the depths. If the miracles that were performed in you had been performed in Sodom, it would have remained to this day. 24 But I tell you that it will be more bearable for Sodom on the day of judgment than for you.”",
+    "ESV": "22 But I tell you, it will be more bearable on the day of judgment for Tyre and Sidon than for you. 23 And you, Capernaum, will you be exalted to heaven? You will be brought down to Hades. For if the mighty works done in you had been done in Sodom, it would have remained until this day. 24 But I tell you that it will be more tolerable on the day of judgment for the land of Sodom than for you.”",
+    "AMP": "22 Nevertheless I say to you, it will be more tolerable for Tyre and Sidon on the day of judgment than for you. 23 And you, Capernaum, will you be exalted to heaven? You will descend to Hades; for if the miracles done in you had been done in Sodom, it would have remained until this day. 24 But I say to you that it will be more tolerable for the land of Sodom on the day of judgment, than for you.”",
+    "NLT": "22 I tell you, Tyre and Sidon will be better off on judgment day than you. 23 “And you people of Capernaum, will you be honored in heaven? No, you will go down to the place of the dead. For if the miracles I did in you had been done in wicked Sodom, it would still be here today. 24 I tell you, even Sodom will be better off on judgment day than you.”",
+    "MSG": "22 At Judgment Day they’ll get off easy compared to you. 23-24 And Capernaum! With your head in the clouds, do you think you’ll sit on the highest council of heaven? You’re going to end up in the abyss. If Sodom had just seen what you’ve seen, she’d still be on the map. At Judgment Day they’ll get off easy compared to you.”"
+  },
+  "Matthew 11:20": {
+    "KJV": "20 Then began he to upbraid the cities wherein most of his mighty works were done, because they repented not:",
+    "NKJV": "20 Then He began to rebuke the cities in which most of His mighty works had been done, because they did not repent:",
+    "NIV": "20 Then Jesus began to denounce the towns in which most of his miracles had been performed, because they did not repent.",
+    "ESV": "20 Then he began to denounce the cities where most of his mighty works had been done, because they did not repent.",
+    "AMP": "20 Then He began to denounce the cities in which most of His miracles had been done, because they did not repent.",
+    "NLT": "20 Then Jesus began to denounce the towns where he had done so many of his miracles, because they hadn’t repented of their sins and turned to God.",
+    "MSG": "20 Next Jesus began to denouncing the towns where most of his miracles had been done, because they hadn’t turned to God."
+  },
+
+  "Luke 13:4-5": {
+    "KJV": "4 Or those eighteen, upon whom the tower in Siloam fell, and slew them, think ye that they were sinners above all men that dwelt in Jerusalem? 5 I tell you, Nay: but, except ye repent, ye shall all likewise perish.",
+    "NKJV": "4 Or those eighteen on whom the tower in Siloam fell and killed them, do you think that they were worse sinners than all other men who dwelt in Jerusalem? 5 I tell you, no; but unless you repent you will all likewise perish.”",
+    "NIV": "4 Or those eighteen who died when the tower in Siloam fell on them—do you think they were guiltier than all the others living in Jerusalem? 5 I tell you, no! But unless you repent, you too will all perish.”",
+    "ESV": "4 Or those eighteen on whom the tower in Siloam fell and killed them: do you think that they were worse offenders than all the others who lived in Jerusalem? 5 No, I tell you; but unless you repent, you will all likewise perish.”",
+    "AMP": "4 Or those eighteen on whom the tower in Siloam fell and killed them: do you think that they were worse sinners than all the others who lived in Jerusalem? 5 I tell you, no; but unless you repent [change your old way of thinking, turn from your sinful ways and live changed lives], you will all likewise perish.”",
+    "NLT": "4 And what about the eighteen people who died when the tower in Siloam fell on them? Were they the worst sinners in Jerusalem? 5 No, and I tell you again that unless you repent, you will perish, too.”",
+    "MSG": "4-5 And what about the eighteen people who died when the Tower of Siloam fell on them? Do you think they were more bad than any other people living in Jerusalem? No. And I’m telling you that if you don’t change your ways, you’ll end up the same way.”"
+  },
+
+  "Revelation 3:22": {
+    "KJV": "22 He that hath an ear, let him hear what the Spirit saith unto the churches.",
+    "NKJV": "22 “He who has an ear, let him hear what the Spirit says to the churches.” ’ ”",
+    "NIV": "22 Whoever has ears, let them hear what the Spirit says to the churches.”",
+    "ESV": "22 He who has an ear, let him hear what the Spirit says to the churches.’”",
+    "AMP": "22 He who has an ear, let him hear and heed what the Spirit says to the churches.’”",
+    "NLT": "22 “Anyone with ears to hear must listen to the Spirit and understand what he is saying to the churches.”",
+    "MSG": "22 “Are your ears awake? Listen. Listen to the Wind Words, the Spirit blowing through the churches.”"
   }
 };
 
 
-
 const quizQuestions = [
     {
-        q: "According to 2 Corinthians 2:11, why should believers not be ignorant?",
+        q: "What is the main theme or title of this lesson?",
         a: [
-            "So they can gain wealth",
-            "So Satan will not take advantage of them",
-            "So they can rule nations",
-            "So they can avoid responsibility"
+            "The Power of Forgiveness",
+            "Penalty For Unyielding To God",
+            "The Blessings of Obedience",
+            "The History of Galilee"
         ],
         correct: 1
     },
     {
-        q: "What biblical story forms the foundation of this lesson?",
+        q: "According to the Introduction, what is the ultimate aim of every miracle and blessing from God?",
         a: [
-            "David and Goliath",
-            "Joseph in Egypt",
-            "Naboth and his vineyard",
-            "Elijah and the prophets of Baal"
+            "To make us famous",
+            "To solve all financial problems",
+            "To return man to God in a restoration exercise",
+            "To prove that Christians are superior"
         ],
         correct: 2
     },
     {
-        q: "What does the lesson say your 'vineyard' may represent today?",
+        q: "In this lesson, what do the mentioned cities (Chorazin, Bethsaida, etc.) represent?",
         a: [
-            "Only farmland",
-            "Only inherited property",
-            "Talents, business, relationships, position, or God’s assignment",
-            "Government authority"
-        ],
-        correct: 2
-    },
-    {
-        q: "What happened to Naboth according to the lesson review?",
-        a: [
-            "He became wealthy",
-            "He moved to another city",
-            "He died as a result of ignorance",
-            "He inherited another vineyard"
-        ],
-        correct: 2
-    },
-    {
-        q: "The story of the man who discovered crude oil under his house illustrates that:",
-        a: [
-            "Oil exploration is profitable",
-            "People can possess great treasure yet remain poor due to ignorance",
-            "Property should always be sold",
-            "Bankruptcy leads to wealth"
+            "Historical landmarks only",
+            "Individuals and families who received God’s blessing but turned their backs on Him",
+            "The only places where Jesus preached",
+            "Ancient trade routes"
         ],
         correct: 1
     },
     {
-        q: "What does the lesson 'Closeness to God' emphasize?",
+        q: "What does the city 'Bethsaida' mean and what does it represent in the lesson?",
         a: [
-            "Financial success",
-            "Political influence",
-            "Spiritual protection through closeness to God",
-            "Public recognition"
+            "House of Bread; represents prosperity",
+            "Fortified city; represents arrogance",
+            "House of Fishing; represents those delivered from struggling who now ignore God",
+            "City of Palms; represents peace"
         ],
         correct: 2
     },
     {
-        q: "Which scripture supports the lesson on closeness to God?",
+        q: "Which city is described as the headquarters of Jesus' earthly ministry?",
         a: [
-            "Proverbs 18:10",
-            "Genesis 1:1",
-            "Matthew 5:9",
-            "Psalm 150:6"
+            "Sodom",
+            "Tyre",
+            "Capernaum",
+            "Sidon"
+        ],
+        correct: 2
+    },
+    {
+        q: "What character trait of the city of Tyre led God to use conquerors like Alexander the Great to wipe it out?",
+        a: [
+            "Arrogance",
+            "Poverty",
+            "Lack of intelligence",
+            "Kindness"
         ],
         correct: 0
     },
     {
-        q: "According to the lesson, what character flaw did Ahab demonstrate?",
+        q: "The lesson 'THE DENOUNCE' suggests that God does what to the ungrateful?",
         a: [
-            "Patience",
-            "Generosity",
-            "Selfishness",
-            "Courage"
+            "Forces them to obey",
+            "Openly withdraws from them",
+            "Gives them more miracles",
+            "Changes His mind about judgment"
+        ],
+        correct: 1
+    },
+    {
+        q: "According to 'GOD’S CONCENTRATION,' why have many received greater attention from God?",
+        a: [
+            "Because they are better than others",
+            "Due to the nature of their problems",
+            "Because they paid for it",
+            "By accident"
+        ],
+        correct: 1
+    },
+    {
+        q: "What is the memory verse for this lesson?",
+        a: [
+            "John 3:16",
+            "Psalm 23:1",
+            "Matthew 22:37",
+            "Genesis 1:1"
         ],
         correct: 2
     },
     {
-        q: "The lesson 'Consider What’s Dear to Others' teaches believers to:",
+        q: "According to the conclusion and Luke 13:4-5, what does God expect from those who receive His blessings?",
         a: [
-            "Respect and value what belongs to others",
-            "Take advantage of others",
-            "Ignore neighbors",
-            "Compete with everyone"
+            "That they should become wealthy",
+            "That they should yield themselves to Him",
+            "That they should build large monuments",
+            "That they should stop working"
         ],
-        correct: 0
-    },
-    {
-        q: "According to the conclusion and Daniel 11:32, those who know their God will:",
-        a: [
-            "Avoid responsibility",
-            "Remain silent",
-            "Do exploits",
-            "Live without challenges"
-        ],
-        correct: 2
+        correct: 1
     }
 ];
-
 
 
 
@@ -265,7 +315,11 @@ const SundaySchoolApp = () => {
     const [commitmentInput, setCommitmentInput] = useState("");
     const [editingContent, setEditingContent] = useState<string | null>(null);
 
-    type SubPoint = { title: string; content: string; scripture?: string };
+    type SubPoint = { 
+        title: string; 
+        content: string; 
+        scriptures?: string[]; 
+    };
     type LessonPoint = {
         title: string;
         content: string;
@@ -289,62 +343,115 @@ const SundaySchoolApp = () => {
         prayerPoints: string[];
     };
     
-
 const [contentData, setContentData] = useState<ContentData>({
-    lessonDate: "March 15, 2026",
-    lessonTitle: "Ignorant Of Own Treasure (Part 2)",
+    lessonDate: "March 22, 2026",
+    lessonTitle: "Penalty For Unyielding To God",
 
     memoryVerse:
-        "Lest Satan should get an advantage of us. For we are not ignorant of his devices.",
-    memoryVerseRef: "2 Corinthians 2:11",
+        "Jesus said unto him, Thou shall love the lord thy God with all thy heart and with all thy soul, and with all thy mind.",
+    memoryVerseRef: "Matthew 22:37",
 
-    introScriptures: [
-        "2 Corinthians 2:11"
-    ],
+    introScriptures: ["Matthew 11:20-24"],
 
-    lessonIntroScriptures: ["1 Kings 21:1-13"],
+    lessonIntroScriptures: ["Matthew 11:20-24"],
 
     introduction:
-        "This lesson should be an eye-opener to every child of God who has been blessed by the Lord. In Naboth's case it was a physical vineyard but yours may be different. Your vineyard could be a talent, business, properties, relations, position, assignment of God, etc. Utilize it appropriately and enjoy what it has to offer.",
+        "The fall of man is costing God a lot of resources to restore the earth. Every miracle, favour, blessing and benevolence is aimed at returning man to God in the restoration exercise. Your benefits are God profits. If you hinder his profits by unyielding to him despite his benefits, you will incur his wrath. God is sure prepared to frustrate the efforts of any man who frustrates his.",
 
     aims:
-        "To arouse brethren to carefully examine what's at their disposal.",
+        "To warn those who mistreat God after receiving his attention.",
 
     objectives:
-        "To prevent the brethren from premature death out of ignorance.",
+        "To save the believer from unfailing impending doom for misconduct.",
 
     lessonIntro:
-        "Naboth was poor and died as a result of his ignorance. Vineyards are great asset far beyond the understanding of Naboth. This incident is like that of a man who sold his properties except the house he lived in due to bankruptcy. He had decided to sell the house also until he mistakenly plunged a pole on the floor which vomited crude oil. All that treasure was under him but he was poor due to ignorance. Appreciate what you have before others will take it.",
+        "The text is a pointer to the LORD’S disappointment, displeasure and punitive plan concerning certain persons for their unexpected misbehavior inspite of his love. Let us consider what God is revealing in this lesson.",
 
     lessonPoints: [
         {
-            title: "CLOSENESS TO GOD:",
+            title: "THE REPRESENTATION:",
             content:
-                "Naboth was too far from God to get his protection for himself and the vineyard. Get closer to God for your security.",
-            scriptures: ["Proverbs 18:10"],
+                "The cities mentioned are representing different individual, families and place who have received God’s blessing and have turn their back on him.",
+            scriptures: [],
+            subPoints: [
+                {
+                    title: "CHORAZIN",
+                    content:
+                        "An unknown city in the Bible days that received God’s favours. Many of us were nobodies but God has now made somebody and yet despise him."
+                },
+                {
+                    title: "BETHSAIDA",
+                    content:
+                        "Means an house of fishing. A city located in a DESERT place by the sea of Galilee characterized by struggling but touched by God. This place speaks of men delivered and established from suffering who now pays no attention to God.",
+                    scriptures: ["Mark 6:45", "Mark 8:22"]
+                },
+                {
+                    title: "CAPERNAUM",
+                    content:
+                        "A city where Jesus established the headquarters of his earthly ministries. Where could be considered more favoured than a place where Jesus establish his HQTRS. This represents people that are highly favoured and blessed for grace’ sake yet treats God with contempt.",
+                    scriptures: ["Matthew 4:13-16", "Mark 2:1"]
+                },
+                {
+                    title: "TYRE",
+                    content:
+                        "A greatly fortified city who sometimes controlled the rich commerce and treasures of the then world. Whose arrogance tried the patience of God and he used Nebuchadnezzar and Alexander the great at different times to wipe out."
+                },
+                {
+                    title: "SIDON",
+                    content:
+                        "Means fortified. A gentile tribe of Canaan that was destroyed for wickedness.",
+                    scriptures: ["1 Chronicles 1:13"]
+                },
+                {
+                    title: "SODOM",
+                    content:
+                        "The city of great wickedness that was destroy with fire.",
+                    scriptures: ["Genesis 19:24-25"]
+                }
+            ],
+        },
+        {
+            title: "THE DENOUNCE:",
+            content:
+                "God clearly reveals here that he is openly withdrawing from the ungrateful.",
+            scriptures: ["Matthew 11:20"],
             subPoints: [],
         },
         {
-            title: "CONSIDER WHAT'S DEAR TO OTHERS:",
+            title: "GOD’S CONCENTRATION:",
             content:
-                "Ahab was so selfish and didn't consider his neighbor. We must learn to respect and value what belongs to others.",
+                "Most of us have received a greater attention from God due to the nature of our problems yet we don’t treat him accordingly.",
+            scriptures: ["Matthew 11:20"],
+            subPoints: [],
+        },
+        {
+            title: "THE BENEVOLENCE:",
+            content:
+                "Whatever God does for you is expected to humble you and draw you closer to him but the case is a reverse for many people.",
             scriptures: [],
+            subPoints: [],
+        },
+        {
+            title: "GOD’S MIND REVEALED:",
+            content:
+                "Judgment awaits those who receive God’s blessings but refuse to yield to him.",
+            scriptures: ["Matthew 11:22-24"],
             subPoints: [],
         }
     ],
 
     conclusion:
-        "Don't give any place for ignorance in your life because it will destroy you. They that obtain knowledge shall do exploits.",
+        "City d, e, and f represent people judged and destroyed by God who by comparison could be better than you except for grace. God expects that those who receive his blessings should yield themselves to him.",
 
-    conclusionScriptures: ["Daniel 11:32"],
+    conclusionScriptures: ["Revelation 3:22"],
 
     prayerPoints: [
-        "Father, remove every form of ignorance from my life.",
-        "Lord, help me recognize and value the treasures You have given me.",
-        "Father, draw me closer to You so that I may enjoy Your protection and guidance."
+        "Father, help me not to despise Your blessings in my life.",
+        "Lord, remove every form of ingratitude from my heart.",
+        "Father, help me to always yield myself to You.",
+        "Lord, draw me closer to You so that I will not lose Your favour."
     ],
 });
-
 
 
 
@@ -734,7 +841,7 @@ const [contentData, setContentData] = useState<ContentData>({
                             Sunday School Lesson
                         </h1>
                         <p className="text-xl opacity-80">
-                            Ignorant Of Own Treasure (Part 2)
+                            Penalty For Unyielding To God
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -1006,19 +1113,19 @@ const [contentData, setContentData] = useState<ContentData>({
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold mb-3">
-                                        Text: 1 Kings 21:1-13
+                                        Text: Matthew 11:20-24
                                     </h3>
                                     <div className="flex gap-2 flex-wrap">
                                         <button
                                             onClick={() =>
                                                 showBibleVersions(
-                                                    "1 Kings 21:1-13"
+                                                    "Matthew 11:20-24"
                                                 )
                                             }
                                             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition flex items-center gap-2"
                                         >
                                         <BookOpen size={16} />
-                                            Read  1 Kings 21:1-13
+                                            Read  Matthew 11:20-24
                                         </button>
 
                                     </div>
@@ -1392,7 +1499,7 @@ const [contentData, setContentData] = useState<ContentData>({
                                                                         <input
                                                                             type="text"
                                                                             value={
-                                                                                subPoint.scripture ||
+                                                                                subPoint.scriptures ||
                                                                                 ""
                                                                             }
                                                                             onChange={(
@@ -1501,25 +1608,17 @@ const [contentData, setContentData] = useState<ContentData>({
                                                                                 {
                                                                                     subPoint.content
                                                                                 }
-                                                                                {subPoint.scripture && (
+                                                                                <div className="flex flex-row flex-wrap items-center gap-2 mt-2">
+                                                                                {subPoint.scriptures?.map((ref, i) => (
                                                                                     <button
-                                                                                        onClick={() => {
-                                                                                            if (
-                                                                                                subPoint.scripture
-                                                                                            )
-                                                                                                showBibleVersions(
-                                                                                                    subPoint.scripture
-                                                                                                );
-                                                                                        }}
-                                                                                        className="ml-2 text-blue-600 hover:text-blue-800 text-sm"
+                                                                                    key={i}
+                                                                                    onClick={() => showBibleVersions(ref)}
+                                                                                    className="bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap px-3 py-1 rounded-lg transition flex items-center gap-2 text-sm flex-shrink-0"
                                                                                     >
-                                                                                        📖
-                                                                                        Read{" "}
-                                                                                        {
-                                                                                            subPoint.scripture
-                                                                                        }
+                                                                                    📖 Read {ref}
                                                                                     </button>
-                                                                                )}
+                                                                                ))}
+                                                                                </div>
                                                                             </li>
                                                                         )
                                                                     )}
@@ -1606,7 +1705,8 @@ const [contentData, setContentData] = useState<ContentData>({
                         )}
             
 
-                       {activeTab === "application" && (
+                      
+                        {activeTab === "application" && (
     <div className="space-y-6">
         <h3 className="text-2xl font-bold mb-4">Personal Application</h3>
 
@@ -1619,13 +1719,13 @@ const [contentData, setContentData] = useState<ContentData>({
             } p-6 rounded-lg`}
         >
             <h4 className="text-xl font-semibold mb-4">
-                Self-Assessment: Ignorant Of Own Treasure
+                Self-Assessment: Yielding To God
             </h4>
 
             <p className="mb-4">
-                On a scale of 1 to 10, how well do you recognize, value, and cultivate
-                the treasures God has placed in your life instead of neglecting them
-                (1 Kings 21:1–2; Hosea 4:6a)?
+                On a scale of 1 to 10, how responsive are you to God's voice and
+                instructions after receiving His blessings and attention
+                (Matthew 11:20–24; Matthew 22:37)?
             </p>
 
             <div className="flex items-center gap-4">
@@ -1644,10 +1744,10 @@ const [contentData, setContentData] = useState<ContentData>({
 
             <p className="mt-3 text-sm italic">
                 {faithRating >= 8
-                    ? "Excellent! Continue appreciating and cultivating your God-given treasures before others attempt to seize them."
+                    ? "Excellent! Continue loving and yielding to God wholeheartedly so that His blessings in your life will not be in vain."
                     : faithRating >= 5
-                    ? "You are making progress. Examine what you may be undervaluing and begin to intentionally cultivate it."
-                    : "This is a wake-up call. Ask God for wisdom to recognize and protect what He has already placed in your hands."}
+                    ? "You are making progress. Reflect on areas where you may still resist God's will and surrender them to Him."
+                    : "This is a wake-up call. Ask God for grace to repent and yield completely to Him before His patience turns to judgment."}
             </p>
         </div>
 
@@ -1660,7 +1760,7 @@ const [contentData, setContentData] = useState<ContentData>({
             } p-6 rounded-lg`}
         >
             <h4 className="text-xl font-semibold mb-4">
-                Personal Decisions: Valuing My Treasure
+                Personal Decisions: Yielding My Life To God
             </h4>
 
             <div className="flex flex-col sm:flex-row gap-2 mb-4">
@@ -1668,7 +1768,7 @@ const [contentData, setContentData] = useState<ContentData>({
                     type="text"
                     value={commitmentInput}
                     onChange={(e) => setCommitmentInput(e.target.value)}
-                    placeholder="Write a personal decision (e.g., identify my gifts, cultivate my skills, protect my opportunities, avoid ignorance, refuse to celebrate poverty)..."
+                    placeholder="Write a personal decision (e.g., obey God's instructions promptly, appreciate His blessings, repent from stubbornness, seek Him daily, avoid ingratitude)..."
                     className={`flex-1 px-4 py-2 rounded-lg border ${
                         darkMode
                             ? "bg-gray-800 border-gray-600"
@@ -1709,17 +1809,17 @@ const [contentData, setContentData] = useState<ContentData>({
             </div>
 
             <p className="mt-4 text-sm italic text-gray-500">
-                Naboth failed to maximize the full potential of his vineyard,
-                and ignorance led to loss (1 Kings 21:1–13). The man at the pool
-                lost opportunities because others moved faster (John 5:7).
-                Do not allow ignorance, delay, or carelessness to rob you of
-                what God has given you. Make deliberate and practical decisions
-                to cultivate and protect your treasure.
+                Cities like Chorazin, Bethsaida, and Capernaum experienced
+                great miracles yet failed to respond appropriately to God
+                (Matthew 11:20–24). God expects His blessings to draw us
+                closer to Him in humility and obedience. Do not allow
+                ingratitude or stubbornness to make you lose God's favour.
+                Make practical decisions today to love God with all your
+                heart, soul, and mind (Matthew 22:37).
             </p>
         </div>
     </div>
 )}
-
 
 
 
