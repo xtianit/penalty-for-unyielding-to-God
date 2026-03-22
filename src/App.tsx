@@ -348,7 +348,7 @@ const [contentData, setContentData] = useState<ContentData>({
     lessonTitle: "Penalty For Unyielding To God",
 
     memoryVerse:
-        "Jesus said unto him, Thou shall love the lord thy God with all thy heart and with all thy soul, and with all thy mind.",
+        "Jesus said unto him, Thou shall love the lord thy God with all thy heart and with all thy soul, and with all thy mind. - Matthew 22:37",
     memoryVerseRef: "Matthew 22:37",
 
     introScriptures: ["Matthew 11:20-24"],
